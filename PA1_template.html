@@ -162,7 +162,7 @@ mean(ttlsteps$total)</code></pre>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>3. What is the average daily activity pattern?</h2>
-<pre class="r"><code>#3.1 Make a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
+<pre class="r"><code>#3.1 Make a time series plot (i.e. type = â€œlâ€) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 fivemin &lt;- aggregate(steps ~ interval, activity, mean)
         plot(fivemin$interval, fivemin$steps, type='l', 
              main=&quot;Average steps across intervals during observation period&quot;, 
@@ -242,7 +242,7 @@ summary(SPD_imputed$total)</code></pre>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>5. Are there differences in activity patterns between weekdays and weekends?</h2>
-<pre class="r"><code>##5.1 Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.
+<pre class="r"><code>##5.1 Create a new factor variable in the dataset with two levels â€“ â€œweekdayâ€ and â€œweekendâ€ indicating whether a given date is a weekday or weekend day.
 
 ## Add the day of the week for each respective date into oa new colum called &quot;daytype&quot;
 imputVal[&quot;daytype&quot;] &lt;- weekdays(as.Date(imputVal$date))
