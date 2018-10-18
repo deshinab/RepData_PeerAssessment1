@@ -51,7 +51,7 @@ hist(ttlsteps$total, main="Steps Per Day",
      xlab="Total steps each day", col = "pink")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
 ```r
 #2.3 Calculate and report the mean and median of the total number of steps taken per day
@@ -81,7 +81,7 @@ fivemin <- aggregate(steps ~ interval, activity, mean)
              ylab="Average steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
 
 ```r
 #3.2 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -173,7 +173,7 @@ hist(SPD_imputed$total, main="Steps Per Day whith NA values imputed with daily m
      xlab="Total steps each day", col = "purple")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
 
 ```r
 ##Calcualte mean and meadian.
@@ -266,4 +266,4 @@ qplot(interval, steps, data = stepsbyint,
   facet_wrap(~ daytype, ncol = 1)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
